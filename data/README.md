@@ -2,14 +2,22 @@
 
 Due to GitHub's file size limitations and best practices, the original CSV dataset is not included in this repository.
 
-The data used in this project comes from the official **CSE-CIC-IDS2018** dataset, provided by the Canadian Institute for Cybersecurity.
+The data used in this project comes from the **CSE-CIC-IDS2018** dataset, focusing specifically on the network traffic data captured on **02-21-2018** (which contains DDoS attacks: LOIC and HOIC)[cite: 4].
 
-## Where to download the data?
-You can download the dataset from the institute's official website:
-👉 [Canadian Institute for Cybersecurity - CIC-IDS2018](https://www.unb.ca/cic/datasets/ids-2018.html)
+## How to obtain the data
 
-## Setup Instructions
-To run the scripts locally:
-1. Download the data from the link above.
-2. Extract the archive and locate the `02-21-2018.csv` file.
-3. Place this file directly into this folder (`data/`).
+You only need the `02-21-2018.csv` file[cite: 1, 2, 3] to run the classification scripts in this repository. 
+
+### Download via Kaggle (Recommended)
+The required files are conveniently available on Kaggle. You can download the specific CSV file directly from this notebook environment:
+👉 [Kaggle: CSE-CIC-IDS2018 (by SHAH TIHAM)](https://www.kaggle.com/code/shahtiham/cse-cic-ids2018)
+
+**Manual Download Steps:**
+1. Visit the link above.
+2. Navigate to the **Input** tab, then look under **Data Sources** for **IDS 2018 Intrusion CSVs**.
+3. Locate and download the `02-21-2018.csv` file.
+
+**Download via Kaggle CLI:**
+If you have the Kaggle API configured, you can pull the notebook and its associated data environment using:
+```bash
+kaggle kernels pull shahtiham/cse-cic-ids2018
