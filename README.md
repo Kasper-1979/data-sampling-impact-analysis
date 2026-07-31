@@ -29,3 +29,49 @@ Based on the experiments, **SMOTE oversampling** proved to be the most effective
 ├── requirements.txt             # Python dependencies
 ├── .gitignore                   # Git ignore file
 └── README.md                    # Project documentation
+```
+
+##⚙️ Setup & Installation
+###1. Install Dependencies
+Clone this repository and install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+###2. Configure Kaggle API (For Dataset)
+This project uses an automated script to download the specific ~300MB CSV file (02-21-2018.csv) from the 7GB CSE-CIC-IDS2018 Kaggle dataset.
+
+1.Create a Kaggle account.
+2.Go to your Account Settings -> API -> Create New Token.
+3.Place the downloaded kaggle.json file in your system's Kaggle folder (e.g., ~/.kaggle/kaggle.json on Linux/Mac or C:\Users\<User>\.kaggle\kaggle.json on Windows).
+
+###3. Download the Data
+Run the automated downloader script from the root directory:
+
+```bash
+python download_data.py
+```
+
+The script will automatically download the archive, extract the required CSV file into the data/ folder, and clean up the temporary files.
+
+##💻 Running the Experiments
+Once the data is downloaded, you can run any of the models from the root directory.
+
+To test the SMOTE oversampling method:
+
+```bash
+python src/oversampling_smote.py
+```
+
+To test the random undersampling method:
+
+```bash
+python src/undersampling.py
+```
+
+To test the baseline random sampling:
+
+```bash
+python src/random_sampling.py
+```
