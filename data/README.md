@@ -27,8 +27,6 @@ kaggle kernels pull shahtiham/cse-cic-ids2018
 
 **Setup Instructions**
 
-1.Ensure the downloaded file is named exactly 02-21-2018.csv.
-
-2.Place this file directly into this folder (data/).
-
+1. Ensure the downloaded file is named exactly 02-21-2018.csv.
+2. Place this file directly into this folder (data/).
 3.Run the Python scripts from the src/ directory. The scripts are pre-configured to automatically load the data using a relative path.
