@@ -1,0 +1,13 @@
+# Enforce LF line endings for all text files (prevents cross-OS issues)
+* text=auto eol=lf
+
+# Explicitly mark Python scripts as text
+*.py text
+
+# Mark binary files (prevents Git from tracking line-by-line text changes)
+*.pdf binary
+*.png binary
+*.jpg binary
+
+# Exclude potential data files from GitHub language statistics
+*.csv linguist-generated=true
