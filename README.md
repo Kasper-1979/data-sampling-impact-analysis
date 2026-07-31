@@ -18,17 +18,21 @@ Based on the experiments, **SMOTE oversampling** proved to be the most effective
 
 ## 📁 Repository Structure
 ```text
-├── data/                        # Directory for dataset (downloaded via script)
-├── docs/                        
-│   └── sprawozdanie_projektowe.pdf  # Comprehensive project report (PL)
-├── src/                         # Source code for experiments
+├── data/
+│   ├── README.md                # Data directory documentation
+│   └── download_data.py         # Automated Kaggle dataset downloader
+├── docs/
+│   ├── README.md                # Documentation overview
+│   └── project_report_PL.pdf    # Comprehensive project report (PL)
+├── src/
+│   ├── README.md                # Source code documentation
 │   ├── oversampling_smote.py    # SMOTE implementation
-│   ├── undersampling.py         # Random Undersampling implementation
-│   └── random_sampling.py       # Baseline classification
-├── download_data.py             # Automated Kaggle dataset downloader
-├── requirements.txt             # Python dependencies
+│   ├── random_sampling.py       # Baseline classification
+│   └── undersampling.py         # Random Undersampling implementation
+├── .gitattributes               # Git attributes configuration
 ├── .gitignore                   # Git ignore file
-└── README.md                    # Project documentation
+├── README.md                    # Main project documentation
+└── requirements.txt             # Python dependencies
 ```
 
 ## ⚙️ Setup & Installation
