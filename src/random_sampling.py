@@ -10,7 +10,8 @@ columns_to_use = [
 ]
 
 print("[INFO] Wczytywanie danych...")
-data = pd.read_csv('C:/Users/hp/Downloads/archive/02-21-2018.csv', usecols=columns_to_use)
+# Load the dataset using a relative path
+data = pd.read_csv('data/02-21-2018.csv', usecols=columns_to_use)
 data = data.dropna()
 
 data['Flow Duration'] = data['Flow Duration'].astype('float32')
