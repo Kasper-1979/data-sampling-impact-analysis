@@ -79,3 +79,9 @@ To test the baseline random sampling:
 ```bash
 python src/random_sampling.py
 ```
+
+## 👤 Author & Contact
+
+**Kacper Lis**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kacper-lis-2b9874410/)
